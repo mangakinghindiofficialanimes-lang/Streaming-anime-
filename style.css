@@ -1,0 +1,52 @@
+body{
+  margin:0;
+  background:#000;
+  color:#fff;
+  font-family:Arial, sans-serif;
+}
+header{
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  background:linear-gradient(90deg,#e50914,#000);
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.card{
+  background:#111;
+  border-radius:14px;
+  overflow:hidden;
+  transition:.3s;
+  box-shadow:0 0 20px rgba(229,9,20,0.2);
+}
+.card:hover{transform:scale(1.07)}
+.card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+.card .info{padding:12px}
+button{
+  background:#e50914;
+  border:none;
+  padding:8px 12px;
+  color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+}
+.delete{
+  background:#222;
+  margin-top:8px;
+}
+.delete:hover{
+  background:#e50914;
+}
+.admin{
+  background:#111;
+  padding:20px;
+}
+.hidden{display:none}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AnimeStream Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>AnimeStream Pro</h1>
+  <button onclick="toggleAdmin()">Admin</button>
+</header>
+
+<div id="adminPanel" class="admin hidden">
+  <h2>Admin Login</h2>
+  <input type="password" id="adminPass" placeholder="Admin password">
+  <button onclick="login()">Login</button>
+
+  <h3>Add Anime</h3>
+  <input id="title" placeholder="Title">
+  <input id="image" placeholder="Image URL">
+  <input id="genre" placeholder="Genre">
+  <input id="rating" placeholder="Rating">
+  <button onclick="addAnime()">Add Anime</button>
+
+  <h3>Add Redirect Link</h3>
+  <input id="link" placeholder="https://linkvertise.com/...">
+  <button onclick="addLink()">Add Link</button>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
